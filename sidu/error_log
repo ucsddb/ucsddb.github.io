@@ -1,0 +1,3 @@
+[20-Sep-2014 04:41:19 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/ucsddrag/public_html/sidu/index.php:2) in /home/ucsddrag/public_html/sidu/inc.page.php on line 2
+[20-Sep-2014 04:41:19 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/ucsddrag/public_html/sidu/index.php:2) in /home/ucsddrag/public_html/sidu/inc.page.php on line 2
+[20-Sep-2014 04:47:14 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/ucsddrag/public_html/sidu/index.php:2) in /home/ucsddrag/public_html/sidu/inc.page.php on line 2

@@ -1,0 +1,163 @@
+*{margin:0;padding:0;font-size:15px}
+img{border:0}
+body{background:#eed;font-family:'Microsoft YaHei','宋体',sans;line-height:100%}
+#tool{color:#333;position:absolute;top:0;height:22px;left:0;right:0;padding:3px 0;overflow:hidden;line-height:21px;white-space:nowrap}
+#tool a{border:solid 1px #eed;text-decoration:none;opacity:.8;color:#000;cursor:pointer}
+#tool a:hover{border-color:#bb9 #fff #fff #bb9;opacity:1}
+#tool i{padding-left:2px;font-style:normal}
+#tool input{border:solid 1px #ddb;padding:1px;width:50px}
+
+#menu{position:absolute;top:28px;width:197px;bottom:0;background:#fff;border-top:solid 1px #cca;border-right:solid 1px #eec;overflow:auto;padding:3px 0 0 3px;display:none;white-space:nowrap}
+#sqls{position:absolute;top:28px;left:3px;right:0;background:#fff;border:solid 1px #cca;border-bottom-color:#eec;border-right:0}
+#sqls>div{padding:5px 0 0 5px;height:100px}
+#sqls textarea{width:100%;height:100%;border:0;background:transparent}
+#main{position:absolute;top:134px;left:3px;right:0;bottom:3px}/*without bottom 3px--page scrollbar funny-- not sure why fix later*/
+#main iframe{border:0;width:100%;height:100%}
+#data{background:#fff;position:absolute;top:28px;bottom:0;border-top:solid 1px #cca;border-left:solid 1px #cca;padding:5px;right:0;left:0;overflow:auto}
+#sqlwait{background:url(loading.gif) 20px 20px no-repeat #fff;width:90px;height:90px;position:absolute;top:0;left:0;display:none;z-index:100}
+
+.toolV #tool{width:25px;bottom:0;height:auto;white-space:normal;padding-top:2px}
+.toolV #tool a{float:left;height:18px}
+.toolV #tool i{display:none}
+.toolV #menu{top:0;left:28px;border-left:solid 1px #cca;border-top:0}
+.toolV #sqls{top:0;left:28px;border-top:0}
+.toolV #main{top:105px;left:28px;border-top:0}
+
+.hide{display:none}
+
+#menu i{color:#888;font-size:12px}
+#menu a{color:#333;text-decoration:none}
+#menu a:hover{background:#cde;text-decoration:underline}
+#menu b,.ft{background:url(tree.png);width:18px;height:18px;display:inline-block;margin:1px;vertical-align:middle}
+.tr_,.tr_last,.tr_open,.tr_openlast{cursor:pointer}
+#menu .tr_last{background-position:-20px}
+#menu .tr_open{background-position:-40px}
+#menu .tr_openlast{background-position:-60px}
+#menu .tr_line{background-position:-80px}
+#menu .tr_linelast{background:none}
+#menu .tr_join{background-position:-100px}
+#menu .tr_joinlast{background-position:-120px}
+#menu .tr_f{background-position:-160px}
+#menu .tr_fopen{background-position:-180px}
+#menu #fref{background-position:-200px}
+#menu .db,.db{background-position:-240px}
+#menu .eng_my,.eng_my{background-position:-260px}
+#menu .eng_pg,.eng_pg{background-position:-280px}
+#menu .eng_sl,.eng_sl{background-position:-300px}
+#menu .eng_sl3,.eng_sl3{background-position:-320px}
+#menu .eng_cb,.eng_cb{background-position:-340px}
+#menu .sch,.sch{background-position:-360px}
+#menu .zf,#menu .xf{background-position:-380px}
+#menu .zS{background-position:-400px}
+#menu .zr{background-position:-420px}
+#menu .zv{background-position:-440px}
+#menu .xS,.xS{background-position:-460px}
+#menu .xr,.xr{background-position:-480px}
+#menu .xv,.xv{background-position:-500px}
+#menu .load{background:url(load.gif) top center no-repeat}
+
+#tool a,#tool b{background:url(tool.png) no-repeat;min-width:16px;padding:2px 2px 2px 18px}
+#tool b{padding-left:20px}
+#tool a.none,#tool b.none{background:none;padding:2px !important}
+#tool #tconn{background-position:0 -50px}
+#tool #SQLoad{background-position:0 -100px}
+#tool #tgrid{background-position:0 -150px}
+#tool #tHis{background-position:0 -200px}
+#tool #tflush,#tool #delall{background-position:0 -300px}
+#tool #temp{background-position:0 -350px}
+#tool #topt{background-position:0 -400px}
+#tool #tvar,#tool #txf{background-position:0 -450px}
+#tool #objTool{background-position:0 -500px}
+#tool #toolEye{background-position:0 -550px}
+#tool #tweb{background-position:0 -600px}
+#tool #tuser{background-position:0 -650px}
+#tool #tquit{background-position:0 -700px}
+#tool #tadd,#tool #addRow{background-position:0 -800px}
+#tool #tdel,#tool #del{background-position:0 -850px}
+#tool #tfind{background-position:0 -900px}
+#tool #tsave{background-position:0 -950px}
+#tool #txS{background-position:0 -1250px}
+#tool #txr{background-position:0 -1300px}
+#tool #txv{background-position:0 -1350px}
+#tool #tchartV{background-position:0 -1400px}
+#tool #tchartV2{background-position:0 -1450px}
+#tool #tchart{background-position:0 -1500px}
+#tool #tarr2n{background-position:0 -1550px}
+#tool #tarr2b{background-position:0 -1600px}
+#tool #run_a{background-position:0 -1650px}
+#tool #texp{background-position:0 -1700px}
+#tool #del0{background-position:0 -1750px}
+#tool #p-{background-position:0 -1800px}
+#tool #resizeSQL,#tool #del1{background-position:0 -1850px}
+#tool #timp{background-position:0 -1900px}
+#tool #run_r,#tool #tgo{background-position:0 -1950px}
+#tool #tarr1f{background-position:0 -2000px}
+#tool #tarr1l{background-position:0 -2050px}
+#tool #run_m{background-position:0 -2100px}
+#tool #toolV{background-position:0 -2150px}
+#tool .eng_my{background-position:0 -1000px}
+#tool input{font-size:14px}
+#tool .grey{opacity:.4}
+
+.toolS{background:url(tool.png)no-repeat;width:16px;height:16px;display:inline-block}
+.delSort{background-position:-2px -853px}
+#tfilter{background-position:-2px -903px}
+.xSort{background-position:-2px -303px}
+
+.Hpop{cursor:pointer}
+.pop{background:#eeb;border:solid 5px #c82;border-radius:5px;display:none;padding:8px;position:fixed;top:50px;left:30px;z-index:9}
+.pop textarea{width:400px;height:200px;border:0;margin:-6px;padding:8px;padding-right:0;background:#eeb}
+.xpop{background:url(close.png);cursor:pointer;height:36px;width:36px;float:left;margin:-35px 0 0 -35px}
+.hand{cursor:pointer}
+.web{padding:10px}
+.web p{margin-bottom:15px}
+.box{border:solid 1px #ddd;background:#fefefe;padding:10px;border-radius:5px}
+.vm{vertical-align:middle}
+.dot{margin:0;padding-top:5px;padding-bottom:4px;background:url(dot.png) bottom left repeat-x}
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+.b{font-weight:bold}
+.ok{color:#393;background:url(tool.png) 0 -2253px no-repeat;padding-left:28px}
+.err{color:#900;background:url(tool.png) 0 -853px no-repeat;padding-left:28px}
+.bg{background:#ddd}
+.bg1{background:#ddc}
+.red{color:#c00}
+.grey,.grey input{color:#666}
+.blue,.blue input{color:#06c}
+.green,.green input{color:#393}
+.ml30{margin-left:30px}
+.fm{font-family:monospace}
+.ar{text-align:right}
+.ac{text-align:center}
+.small{font-size:.8em}
+
+.colTool{opacity:.6;text-align:center}
+.colSort:hover,.grid a:hover{color:#066}
+
+.inf{padding-left:25px;background:url(tool.png) -2px -253px no-repeat}
+.mr{margin-right:5px}
+.anone{text-decoration:none;color:#333}
+.null,.null a{color:#888 !important;font-style:italic}
+
+.grid{border:solid 1px #cca;white-space:nowrap}
+.grid .th td{background:#ddb;text-align:left;padding:1px;font-weight:bold;color:#333}
+.grid .th:hover td{background:#ddb}
+.grid td{background:#eed;padding-right:2px;vertical-align:top}
+.grid tr:hover td,.grid tr:hover input{background:#cf9}
+.grid input{width:100%;border:solid 1px #ccc}
+.grid select{width:100%;height:21px;overflow:hidden}
+.grid input:focus{background:#9c9}
+.grid a{color:#033;text-decoration:none}
+.gridf input{color:#900;background:#cc0}
+
+.sort1{background:url(arrup.gif) 5px center no-repeat}
+.sort1d{background:url(arrdw.gif) 5px center no-repeat}
+.sort2{background:url(arrup2.gif) 5px center no-repeat}
+.sort2d{background:url(arrdw2.gif) 5px center no-repeat}
+.sort1,.sort1d,.sort2,.sort2d{padding-left:18px}
+.cbox{background:#ddb !important;text-align:center;padding:0 7px !important;vertical-align:middle !important}
+#checkAll{width:15px}
+
+.gridH{padding-right:10px !important;cursor:e-resize}
+.gridH a{overflow:hidden;display:block}
