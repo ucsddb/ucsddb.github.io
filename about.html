@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/dataTables.bootstrap.min.css">
 	<!--icon-->
 	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -24,6 +25,11 @@
 	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<!--endicon-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
 	<title>UCSD Dragon Boat - About</title>
 </head>
 <body>
@@ -78,7 +84,19 @@
 
 		<br>
 
-		<!-- Roster -->
+		<!-- History of UCSD DB and Dragon Boat -->
+		<div class="container history-container row">
+			<span class="col-md-6">
+				<h4 class="heading-title">HISTORY</h4>
+				The University of California, San Diego Dragon Boat Team was started in 2003 by a group of ambitious students looking to take their passion for the competitive sport they first encountered in high school to the college level. From its humble beginnings, the team has now grown into one of the top collegiate teams in California, competing in San Francisco's CDBA Collegiate Championship, Tempe's Arizona Dragon Boat Festival, the Long Beach Spring Race, the Long Beach Summer Dragon Boat Festival, and the San Francisco International Dragon Boat Festival.
+			</span>
+			<span class="col-md-6">
+				<h4 class="heading-title">DRAGON BOAT</h4>
+				Dragon boat racing is an ancient canoeing sport originating from an annual ethnic ritual over the past two thousand years throughout southern China, that later spread throughout southeastern Asia and recently all over the globe. A dragon boat is essentially a 40 foot canoe that accommodates 20 paddlers (2 per row), a drummer and a steersman. Although competition has taken place for more than two millennia as part of religious ceremonies and folk customs, dragon boat racing has more recently risen as a competitive international sport.
+			</span>
+		</div>
+
+		<!-- Board -->
 		<div class="container roster-container row">
 			<h4 class="heading-title">ROSTER</h4>
 			<p><strong>EXECUTIVE BOARD 2015-2016</strong></p>
@@ -107,89 +125,25 @@
 			<span class="col-md-6">
 				<p><em>Historian/Webmaster</em><br>Brandon Dang<br><br></p>
 			</span>
-			<span class="our-team-title">
-				<p><strong>OUR TEAM</strong></p>
-			</span>
-			<span class="col-md-4">
-				<p>
-					Adrienne Pena<br>
-					Albert Liang<br>
-					Alexandra Benitez<br>
-					Alexandra Huang<br>
-					Ambrose Vuong<br>
-					Audrey Chang<br>
-					Ayako Ota<br>
-					Brandon Dang<br>
-					Brian Vu<br>
-					Calvin Chen<br>
-					Christine Tran<br>
-					Christopher Thomas<br>
-					Christopher Yu<br>
-					Crystal Yan<br>
-					David Situ<br>
-					David Tran<br>
-					Dennis Liu<br>
-				</p>
-			</span>
-			<span class="col-md-4">
-				<p>
-					Dieter Lam<br>
-					Elmer Barrera Aragon<br>
-					Erin Pang<br>
-					Howard Yang<br>
-					Ivonnie Shih<br>
-					Jason Hong<br>
-					Jay Yu<br>
-					Jerry Lin<br>
-					Jessica Soong<br>
-					Jody Tai<br>
-					Jonathan Wong<br>
-					Kenneth Truong<br>
-					Kenny Li<br>
-					Kevin Dam<br>
-					Kevin Tran<br>
-					Kimberly Hui<br>
-				</p>
-			</span>
-			<span class="col-md-4">
-				<p>
-					Lori Ross<br>
-					Lucas Blumhardt<br>
-					Lydia Fong<br>
-					Marie Nguyen<br>
-					Michael Chiang<br>
-					Nathan Au-Yeung<br>
-					Nathaniel Liu<br>
-					Norman Liu<br>
-					Regina Wong<br>
-					Rinoka Sato<br>
-					Ryan Chiang<br>
-					Shao Ling Soh<br>
-					Steven Tien<br>
-					Theodore Ochiai<br>
-					Thomas Chang<br>
-					Tori Duong<br>
-				</p>
-			</span>
+		</div> <!-- end board container -->
+
+		<!-- Board -->
+		<div class="container">
+			<table id="roster-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Year</th>
+				</tr>
+				</thead>
+				<tbody id="roster-body"><!-- roster injected from JavaScript--></tbody>
+			</table>
 		</div> <!-- end roster container -->
 
-		<!-- History of UCSD DB and Dragon Boat -->
-		<div class="container history-container row">
-			<span class="col-md-6">
-				<h4 class="heading-title">HISTORY</h4>
-				The University of California, San Diego Dragon Boat Team was started in 2003 by a group of ambitious students looking to take their passion for the competitive sport they first encountered in high school to the college level. From its humble beginnings, the team has now grown into one of the top collegiate teams in California, competing in San Francisco's CDBA Collegiate Championship, Tempe's Arizona Dragon Boat Festival, the Long Beach Spring Race, the Long Beach Summer Dragon Boat Festival, and the San Francisco International Dragon Boat Festival.
-			</span>
-			<span class="col-md-6">
-				<h4 class="heading-title">DRAGON BOAT</h4>
-				Dragon boat racing is an ancient canoeing sport originating from an annual ethnic ritual over the past two thousand years throughout southern China, that later spread throughout southeastern Asia and recently all over the globe. A dragon boat is essentially a 40 foot canoe that accommodates 20 paddlers (2 per row), a drummer and a steersman. Although competition has taken place for more than two millennia as part of religious ceremonies and folk customs, dragon boat racing has more recently risen as a competitive international sport.
-			</span>
-		</div>
 	</div> <!-- end content container -->
 
 	<br>
 
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
+
 </body>
 </html>
