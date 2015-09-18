@@ -282,6 +282,51 @@ body {
 	font-family: LatoBold !important;
 }
 
+.results-table {
+	font-size: 0.85em;
+}
+
+.results-table>thead>tr>th {
+	text-align: center;
+}
+
+.results-table>tbody>tr:nth-child(odd)>td {
+	background-color: lightgray;
+}
+
+.results-table>tbody>tr:nth-child(even)>td {
+	background-color: #EEEEEE;
+}
+
+.results-table>tbody>tr>td:nth-child(1) {
+	width: 40%;
+}
+
+.results-table>tbody>tr>td:nth-child(2) {
+	width: 40%;
+}
+
+.results-table>tbody>tr>td:nth-child(3) {
+	width: 20%;
+}
+
+.results-table-inner {
+	font-size: 0.8em;
+}
+
+.results-table-inner>tbody>tr>td:nth-child(1) {
+	width: 70%;
+}
+
+.results-table-inner>tbody>tr>td:nth-child(2) {
+	width: 30%;
+}
+
+.results-table-inner>thead>tr>th {
+	text-align: center;
+}
+
+
 /***** SPONSORS *****/
 .sponsors-container {
 	font-size: 1em;

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/dataTables.bootstrap.min.css">
 	<!--icon-->
 	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -24,6 +25,11 @@
 	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<!--endicon-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
 	<title>UCSD Dragon Boat - Results</title>
 </head>
 <body>
@@ -64,130 +70,410 @@
 		<!-- Results -->
 		<div class="container results-container row">
 			<h4 class="heading-title">RACE RESULTS</h4>
+
 			<p class="subheading-title" style="padding-top: 25px">2014-2015</p>
-			<p><em>
-				<span class="festival-title">2015 Long Beach Dragon Boat Festival</span><br>
-				Marine Stadium, Long Beach, CA<br>
-				(07/18/15-07/19/15)
-			</em></p>
-			<p>
-				College Division A 500m - 2nd Place<br>
-				Women Division A 500m - 2nd place (with UCLA)<br>
-				Open Division A 500m - 5th place (with UCLA)<br>
-				Mixed Division 1 A 500m - 8th place<br>
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">2015 Long Beach Dragon Boat Spring Race</span><br>
-				Marine Stadium, Long Beach, CA<br>
-				(04/26/15)
-			</em></p>
-			<p>
-				Mixed Division B 500m - 1st Place<br>
-				Mixed Division B 200m - 1st Place
-			</p>
-			<br>	
-			<p><em>
-				<span class="festival-title">Arizona Dragon Boat Festival</span><br>
-				Tempe Town Lake, Tempe, AZ<br>
-				(03/28/15 - 03/29/15)
-			</em></p>
-			<p>
-				College Division 500m - 5th Place<br>
-				College Division 500m - 6th Place<br>
-				Mixed Division A 500m - 5th Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">10th Annual CDBA College Cup Championship</span><br>
-				Lake Merced, San Francisco, CA<br>
-				(11/09/14)
-			</em></p>
-			<p>
-				Mixed Division A 500m - 4th Place<br>
-				Mixed Division B 500m - 4th Place<br>
-				Womens 500m - 4th Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">San Diego Dragon Boat Race</span><br> 
-				Fiesta Island, Mission Bay, San Diego, CA<br>
-				(10/11/14 - 10/12/14)
-			</em></p>
-			<p>
-				Mixed Division A 500m - 2nd Place<br>
-				Mixed Division B 500m - 1st Place<br>
-				College Division 500m - 1st Place<br>
-				College Division 500m - 3rd Place
-			</p>
+			<table id="results-table-2014_2015" class="table table-striped table-bordered results-table" cellspacing="0" width="100%">
+				<thead>
+				<tr>
+					<th>Race</th>
+					<th>Location</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Long Beach Dragon Boat Festival</td>
+						<td>Marine Stadium - Long Beach, CA</td>
+						<td>07/18/15 - 07/19/15</td>
+					</tr>
+					<tr><td colspan="3">
+						<table class="table table-striped table-bordered results-table-inner">
+							<thead></thead>
+							<tbody>
+							<tr>
+								<td>College Division A 500m</td>
+								<td>2nd Place</td>
+							</tr>
+							<tr>
+								<td>Women Division A 500m (w/ UCLA)</td>
+								<td>2nd Place</td>
+							</tr>
+							<tr>
+								<td>Open Division A 500m (w/ UCLA)</td>
+								<td>5th Place</td>
+							</tr>
+							<tr>
+								<td>Mixed Division I A 500m</td>
+								<td>8th Place</td>
+							</tr>
+							</tbody>
+						</table>
+					</td></tr>
+					<tr>
+						<td>Long Beach Dragon Boat Spring Race</td>
+						<td>Marine Stadium - Long Beach, CA</td>
+						<td>04/26/15</td>
+					</tr>
+					<tr><td colspan="3">
+						<table class="table table-striped table-bordered results-table-inner">
+							<thead></thead>
+							<tbody>
+							<tr>
+								<td>Mixed Division B 500m</td>
+								<td>1st Place</td>
+							</tr>
+							<tr>
+								<td>Mixed Division B 200m</td>
+								<td>1st Place</td>
+							</tr>
+							</tbody>
+						</table>
+					</td></tr>
+					<tr>
+						<td>12th Annual Arizona Dragon Boat Festival</td>
+						<td>Tempe Town Lake - Tempe, AZ</td>
+						<td>03/28/15 - 03/29/15</td>
+					</tr>
+					<tr><td colspan="3">
+						<table class="table table-striped table-bordered results-table-inner">
+							<thead></thead>
+							<tbody>
+							<tr>
+								<td>College Division 500m</td>
+								<td>5th Place</td>
+							</tr>
+							<tr>
+								<td>College Division 500m</td>
+								<td>5th Place</td>
+							</tr>
+							<tr>
+								<td>Mixed Division A 500m</td>
+								<td>5th Place</td>
+							</tr>
+							</tbody>
+						</table>
+					</td></tr>
+					<tr>
+						<td>10th Annual CDBA College Cup Championship</td>
+						<td>Lake Merced - San Francisco, CA</td>
+						<td>11/09/14</td>
+					</tr>
+					<tr><td colspan="3">
+						<table class="table table-striped table-bordered results-table-inner">
+							<thead></thead>
+							<tbody>
+							<tr>
+								<td>Mixed Division A 500m</td>
+								<td>4th Place</td>
+							</tr>
+							<tr>
+								<td>Mixed Division B 500m</td>
+								<td>4th Place</td>
+							</tr>
+							<tr>
+								<td>Women Division 500m</td>
+								<td>4th Place</td>
+							</tr>
+							</tbody>
+						</table>
+					</td></tr>
+					<tr>
+						<td>San Diego Dragon Boat Race</td>
+						<td>Fiesta Island, Mission Bay - San Diego, CA</td>
+						<td>10/11/14 - 10/12/14</td>
+					</tr>
+					<tr><td colspan="3">
+						<table class="table table-striped table-bordered results-table-inner">
+							<thead></thead>
+							<tbody>
+							<tr>
+								<td>Mixed Division A 500m</td>
+								<td>2nd Place</td>
+							</tr>
+							<tr>
+								<td>Mixed Division B 500m</td>
+								<td>1st Place</td>
+							</tr>
+							<tr>
+								<td>College Division 500m</td>
+								<td>1st Place</td>
+							</tr>
+							<tr>
+								<td>College Division 500m</td>
+								<td>3rd Place</td>
+							</tr>
+							</tbody>
+						</table>
+					</td></tr>
+				</tbody>
+			</table>
+
 			<p class="subheading-title" style="padding-top: 25px">2013-2014</p>
-			<p><em>
-				<span class="festival-title">Long Beach Southern California Dragon Boat Festival</span><br>
-				Marine Stadium, Long Beach, CA<br>
-				(04/27/14)
-			</em></p>
-			<p>
-				Mixed Division A 500m - 3rd Place<br>
-				Mixed Division D 200m - 1st Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">Arizona Dragon Boat Festival</span><br>
-				Tempe Town Lake, Tempe, AZ<br>
-				(03/22/14 - 03/23/14)
-			</em></p>
-			<p>
-				College Division 500m - 3rd Place<br>
-				Mixed Division B 500m - 3rd Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">9th Annual CDBA College Cup Championship</span><br>
-				Lake Merced, San Francisco, CA<br>
-				(11/09/13)
-			</em></p>
-			<p>
-				Mixed Division A 500m - 1st Place<br>
-				Mixed Division C 500m - 1st Place<br>
-				Womens 500m - 4th Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">San Diego Dragon Boat Race</span><br>
-				Fiesta Island, Mission Bay, San Diego, CA<br>
-				(10/05/13 - 10/06/13)
-			</em></p>
-			<p>
-				College Division 500m - 1st Place<br>
-				Mixed Divison A 500m - 3rd Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">ViewSonic Long Beach World Cup Dragon Boat Tournament</span><br>
-				Marine Stadium, Long Beach, CA<br>
-				(07/27/13 - 07/28/13)
-			</em></p>
-			<p>
-				Mixed Division II C 500m - 1st Place<br>
-				College Division A 500m - 5th Place
-			</p>
-			<br>
-			<p><em>
-				<span class="festival-title">Rio Tinto Alcan Dragon Boat Festival</span><br>
-				False Creek, Vancouver, BC, Canada<br>
-				(06/21/13 - 06/23/13)
-			</em></p>
-			<p>
-				U23 Championship 500m - 5th Place<br>
-				Recreational A Consolation 500m - 2nd Place
-			</p>			
+			<table id="results-table-2013_2014" class="table table-striped table-bordered results-table" cellspacing="0" width="100%">
+				<thead>
+				<tr>
+					<th>Race</th>
+					<th>Location</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Long Beach Dragon Boat Festival</td>
+					<td>Marine Stadium - Long Beach, CA</td>
+					<td>07/26/14 - 07/27/14</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division I A 500m</td>
+							<td>4th Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division I+II A 200m</td>
+							<td>4th Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>Long Beach Dragon Boat Spring Race</td>
+					<td>Marine Stadium - Long Beach, CA</td>
+					<td>04/27/14</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division A 500m</td>
+							<td>3rd Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division D 200m</td>
+							<td>1st Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>11th Annual Arizona Dragon Boat Festival</td>
+					<td>Tempe Town Lake - Tempe, AZ</td>
+					<td>03/22/14 - 03/23/14</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>College Division 500m</td>
+							<td>3rd Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division B 500m</td>
+							<td>3rd Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>9th Annual CDBA College Cup Championship</td>
+					<td>Lake Merced - San Francisco, CA</td>
+					<td>11/09/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division A 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division C 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>Women Division 500m</td>
+							<td>4th Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>San Diego Dragon Boat Race</td>
+					<td>Fiesta Island, Mission Bay - San Diego, CA</td>
+					<td>10/05/13 - 10/06/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division A 500m</td>
+							<td>3rd Place</td>
+						</tr>
+						<tr>
+							<td>College Division 500m</td>
+							<td>1st Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				</tbody>
+			</table>
+
+			<p class="subheading-title" style="padding-top: 25px">2012-2013</p>
+			<table id="results-table-2012_2013" class="table table-striped table-bordered results-table" cellspacing="0" width="100%">
+				<thead>
+				<tr>
+					<th>Race</th>
+					<th>Location</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Viewsonic Long Beach World Cup Dragon Boat Tournament</td>
+					<td>Marine Stadium - Long Beach, CA</td>
+					<td>07/27/13 - 07/28/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division II C 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>College Division A 500m</td>
+							<td>5th Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>Rio Tinto Alcan Dragon Boat Festival</td>
+					<td>False Creek - Vancouver, BC, Canada</td>
+					<td>06/21/13 - 06/22/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>U23 Championship 500m</td>
+							<td>5th Place</td>
+						</tr>
+						<tr>
+							<td>Recreational A Consolation 500m</td>
+							<td>2nd Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>Long Beach Dragon Boat Spring Race</td>
+					<td>Marine Stadium - Long Beach, CA</td>
+					<td>04/28/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division B 500m</td>
+							<td>2nd Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division B 200m</td>
+							<td>2nd Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division D 200m</td>
+							<td>1st Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>10th Annual Arizona Dragon Boat Festival</td>
+					<td>Tempe Town Lake - Tempe, AZ</td>
+					<td>03/23/13 - 03/24/13</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division B 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>College Division B 500m</td>
+							<td>2nd Place</td>
+						</tr>
+						<tr>
+							<td>College Division B 500m</td>
+							<td>3rd Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>8th Annual CDBA College Cup Championship</td>
+					<td>Lake Merced - San Francisco, CA</td>
+					<td>11/11/12</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division A 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>Mixed Division C 500m</td>
+							<td>1st Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr>
+					<td>San Diego Dragon Boat Race</td>
+					<td>Fiesta Island, Mission Bay - San Diego, CA</td>
+					<td>10/20/12 - 10/21/12</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table table-striped table-bordered results-table-inner">
+						<thead></thead>
+						<tbody>
+						<tr>
+							<td>Mixed Division A 500m</td>
+							<td>2nd Place</td>
+						</tr>
+						<tr>
+							<td>College Division 500m</td>
+							<td>1st Place</td>
+						</tr>
+						<tr>
+							<td>College Division 500m</td>
+							<td>4th Place</td>
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				</tbody>
+			</table>
+
 		</div>
 	</div> <!-- end content container -->
 
 	<br>
 
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
 </body>
 </html>
