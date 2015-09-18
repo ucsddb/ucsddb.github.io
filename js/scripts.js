@@ -7,7 +7,7 @@ $(function() {
 		var rosterPromise = $.ajax({
 			type: 'GET',
 			dataType: 'text',
-			url: '../files/roster.csv',
+			url: 'files/roster.csv',
 			headers: {
 				'Access-Control-Allow-Headers': '*',
 				'Access-Control-Allow-Origin': '*',
@@ -43,11 +43,23 @@ $(function() {
 				"sDom": '<"toolbar">frltip'
 			});
 
-			$('#roster-table_length').css('float', 'left'); //Align length toggle to left
-			$('#roster-table_filter').css('float', 'right'); //Align search to right
+			$('#roster-table_length').addClass('roster-table_length'); //Align length toggle to left
+			$('#roster-table_filter').addClass('roster-table_filter'); //Align search to right
 			$('#roster-table_wrapper').css('font-size','0.8em'); //Size the entire data table
 			$('#roster-table').css('text-align','left'); //Align table data to left
 			$('div.toolbar').html("OUR TEAM").css('font-size','1.4em'); //Title of the table
+		});
+
+		//Only put them on same line if screen is big enough
+		$(window).resize(function() {
+			if($(window).width() > 430) {
+				$('#roster-table_length').addClass('roster-table_length'); //Align length toggle to left
+				$('#roster-table_filter').addClass('roster-table_filter'); //Align search to right
+			}
+			else {
+				$('#roster-table_length').removeClass('roster-table_length'); //Align length toggle to left
+				$('#roster-table_filter').removeClass('roster-table_filter'); //Align search to right
+			}
 		});
 
 		//Failed GET

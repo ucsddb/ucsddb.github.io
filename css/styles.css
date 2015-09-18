@@ -264,6 +264,14 @@ body {
 	margin-top: 15px;
 }
 
+.roster-table_length {
+	float: left;
+}
+
+.roster-table_filter {
+	float: right;
+}
+
 /***** RACE RESULTS *****/
 .results-container {
 	font-size: 1em;
