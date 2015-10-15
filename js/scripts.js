@@ -7,7 +7,7 @@ $(function() {
 		var rosterPromise = $.ajax({
 			type: 'GET',
 			dataType: 'text',
-			url: 'files/roster.csv',
+			url: 'files/roster2.csv',
 			headers: {
 				'Access-Control-Allow-Headers': '*',
 				'Access-Control-Allow-Origin': '*',
@@ -19,7 +19,8 @@ $(function() {
 		//Run when GET action is completed successfully
 		rosterPromise.done(function(data) {
 			//Read line by line
-			var dataArray = data.split("\n");
+			//If you run into TypeError: Cannot read 'mData' of undefined, change \r to \n
+			var dataArray = data.split("\r");
 
 			//For each line, populate it like this --> <tr> <td> text </td> </tr>
 			$.each(dataArray, function() {
