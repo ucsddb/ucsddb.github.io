@@ -45,8 +45,8 @@
 			</div>
 
 			<div class="collapse navbar-collapse" id="navigation">
-				<ul class="nav navbar-nav">
-			 		<li><a href="./index.html">Home</a></li>
+			<ul class="nav navbar-nav">
+			        <li><a href="./index.html">Home</a></li>
 			        <li><a href="./about.html">About</a></li>
 			        <li><a href="./results.html">Results</a></li>
 			        <li><a href="./sponsors.html">Sponsors</a></li>
@@ -55,7 +55,7 @@
 			        <li><a href="./recruitment.html">Recruitment</a></li>
 			        <li><a href="./photos.html">Photos</a></li>
 			        <li><a href="./contacts.html">Contact</a></li>
-				</ul>
+			</ul>
 			</div>
 		</div> <!-- end container-fluid -->
 	</nav> <!-- end navigation -->
@@ -67,18 +67,19 @@
 		<!-- Special Thanks -->
 		<div class="container thanks-container row">
 			<p style="font-family: LatoBold">SPECIAL THANKS TO</p>
-			<span class="col-md-4">
+			<span class="col-md-6">
 				<p>Scott Kwang</p>
 				<p>Henry Kao</p>
 			</span>
-			<span class="col-md-4">
+			<span class="col-md-6">
 				<p>Sasanna Yee</p>
 				<p>&nbsp;</p>
 			</span>
-			<span class="col-md-4">
+			<!--UNCOMMENT BELOW IF THERE ARE MORE DONORS AND CHANGE "col-md-6" class to "col-md-4"--> 
+			<!--<span class="col-md-4">
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-			</span>                
+			</span>-->                
 		</div>
 		<!-- Donations -->
 		<div class="container donations-container row">
@@ -137,30 +138,11 @@
 
 	        <!-- Donation Links -->
 	        <div class="container">
-	           	<p style="margin-top: 20px; font-family: LatoBold">Please choose a donation category and method.</p>
-	            <span class="col-md-6">
-	            	<p style="font-family: LatoBold">Tax Deductible Donations</p>
+	            	<p style="margin-top: 20px; font-family: LatoBold">Tax Deductible Donations</p>
 	            	<!-- Sports Clubs -->
 	            	<a href="https://giveto.ucsd.edu/make-a-gift?sk=3&txtFundNo=4962" target="_blank">
 	            		<img class="donation-logo" src="images/sports_clubs_donate.jpg" width="175" height="50">
 	            	</a>
-           			<p style="font-size:0.8em">Note: Sports Clubs will take a 6% Processing Fee.</p>
-	           	</span>
-	            <span class="col-md-6">
-	            	<p style="font-family: LatoBold">Immediate Donations</p>
-	            	<!-- Venmo -->
-	            	<a href="https://venmo.com/w/intents/make-payment?recipient_id=1404344968675328584"  target="_blank">
-	            		<img class="donation-logo" src="images/venmo_logo.jpg" width="50" height="47" style="vertical-align: top">
-	            	</a>
-	            	<!-- Pay Pal -->
-					<form style="display: inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-						">
-	            		<input class="donation-logo" type="image" src="images/paypal_logo.jpg" width="100" height="50" border="0" name="submit">
-					</form>
-	            	<p style="font-size: 0.8em">Note: Donation is not tax deductible.</p>
-	           	</span>
 	        </div>
 
 	        <!-- Google Form -->
@@ -169,22 +151,7 @@
 	            <iframe src="https://docs.google.com/forms/d/1Od6lUW1bdE8mxY1RVEQyJxaCOOxE9Un4WLIwg_63F5Y/viewform?embedded=true" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form...</iframe>
 	        </div>
 		</div>
-		<!-- List of Donors -->
-		<div class="container donors-container row">
-			<p style="font-family: LatoBold; padding-top: 20px">LIST OF DONORS</p>
-			<span class="col-md-4">
-				<p>Scott Kwang</p>
-				<p>Henry Kao</p>
-			</span>
-			<span class="col-md-4">
-				<p>Sasanna Yee</p>
-				<p>&nbsp;</p>
-			</span>
-			<span class="col-md-4">
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-			</span>                 
-		</div>
+
 	</div> <!-- end content container -->
 
 	<br>
