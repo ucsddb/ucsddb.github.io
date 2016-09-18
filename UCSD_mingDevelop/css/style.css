@@ -1,0 +1,908 @@
+
+/* =============================================================================
+  Default, Results
+============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video 
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== ===========================================================
+  HTML, BODY
+============================================================================= */
+html,
+body 
+{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body 
+{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
+  overflow: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #333;/*light black for body*/
+  background-color: #ECF0F1;/*fuzzy white*/
+}
+/* =============================================================================
+  Universally used divs
+============================================================================= */
+.horz_block
+{
+  display: -webkit-flex;
+  display: flex;
+  width: 82.5%;
+  margin: 2rem auto;
+  position: relative; 
+}
+@media screen and (max-width: 768px) 
+{
+  .horz_block
+  {
+    width:90%;
+  } 
+}
+
+.flex_center
+{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;/*verticle center*/
+  justify-content: center;/*horizontal center*/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.section_header
+{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 250%;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.section_subHeader
+{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 250%;
+  text-align: center;
+  width: 100%;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.section_text
+{
+  font-family: 'Cabin', sans-serif;
+  font-size: 110%;
+  line-height: 180%;
+  color: #555;
+  width: 100%;
+}
+
+.blue_block
+{
+  background-color: #1a397f;/*dark blue primary color*/
+  width: 100%;
+  color: white;
+}
+
+.blue_block .section_text
+{
+  color:#ECF0F1;
+}
+
+.content_wrap
+{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.no_margins
+{
+  margin: 0;
+}
+
+.no_botMargin
+{
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+  Side Animated Navigation
+============================================================================= */
+.sideNav_button
+{
+  position: fixed;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  right: 0;
+  font-size: 200%;
+  cursor: pointer;
+  color: #ffffff;/*white*/
+  opacity: 1.0;
+  text-shadow: #555 0.03rem  0.03rem  0.03rem;
+  z-index: 5;
+}
+
+.sideNav
+{
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+  padding-top: 4rem;/*padding before first link*/
+  overflow: hidden;
+  white-space: nowrap;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sideLinks > a 
+{
+  padding: 0.3rem 1rem 0.3rem 0.3rem;/*dimension of the sideNav*/
+  text-align: right;
+  text-decoration: none;
+  font-size: 170%;/*options for the sidebar*/
+  color: #cccccc;
+  display: block;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) 
+{
+ .sideLinks > a
+  {
+    font-size: 150%;
+  }
+
+}
+
+.sideNav a:hover, .offcanvas a:focus
+{
+  color: #ffffff;
+}
+
+.sideNavContact{
+  text-align: center;
+  white-space: nowrap;
+  color:#ffffff;
+  flex: 0 0 40%;
+}
+
+.sideLinks
+{
+  flex: 0 0 60%;
+}
+
+.emailContact
+{
+  width:100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) 
+{
+ .emailContact
+  {
+    font-size: 90%;
+  }
+
+}
+
+.sponsorContact
+{
+  margin-top:1rem;
+  width:100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) 
+{
+ .sponsorContact
+  {
+    font-size: 90%;
+  }
+
+}
+
+.socialMedia_container
+{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.socialMedia_container a{
+  padding: 0rem 1rem;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 180%;
+
+}
+
+.sponsorContainer
+{
+  
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  white-space: nowrap;
+  float:none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.sponsorContainer .sponsorIcon
+{
+
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  height: 100%;
+}
+
+.sponsorContainer .sponsorIcon img
+{
+  height: 90%;
+  width: 90%;
+}
+
+
+#dicksIcon img
+{
+  width: 90%;
+  height: auto;
+}
+
+#bodyArmorIcon img
+{
+  height: 90%;
+  width: 40%;
+}
+
+.donatelink
+{
+  color:#f7e285;
+}
+
+.donatelink:hover
+{
+  color:#f4d755;
+}
+
+/* =============================================================================
+  CONTENT HOMEPAGE
+============================================================================= */
+.content_home 
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);/* center the content in the middle vertically*/
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 47.5rem;
+  text-align: center;
+}
+
+.content_logo 
+{
+  max-width: 70%;
+}
+
+.content_description 
+{
+  color: white;
+  font-style: italic;
+  font-size: 170%;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+#est
+{
+  font-size: 100%;
+  margin-top: 0rem;
+}
+
+.home_btn
+{
+  margin-top: 2rem;
+  display: inline-block;
+  border-radius: 0.05rem;
+  background-color: (255,255,255,0);
+  border: 0.05rem solid #ffffff ;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 120%;
+  padding: 0.4rem 0px;
+  width: 8.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.home_btn a
+{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home_btn a:after 
+{
+  content: '›';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.5rem;/*distance the arrow is traveling*/
+  transition: 0.5s;
+}
+
+.home_btn:hover a {
+  padding-right: 1.2rem;/*distance text moves*/
+}
+
+.home_btn:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* =============================================================================
+  VIDEO
+============================================================================= */
+.video 
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mute_button
+{
+  color: #ffffff;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+/* =============================================================================
+  CONTENT ABOUT PAGE
+============================================================================= */
+
+
+#block_about_head
+{
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url("../img/header2.jpg");
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 15rem;
+  width: 100%;
+  align-items: center;/*verticle center*/
+  justify-content: center;/*horizontal center*/
+  margin: 0;
+  text-align: center;
+}
+
+
+.about_header
+{
+  font-size: 600%;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: #333 0.05rem 0.05rem 0rem;
+
+}
+
+@media screen and (max-width: 768px) 
+{
+ .about_header
+  {
+    font-size: 400%;
+  }
+
+}
+
+#block_about1
+{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#block_about2
+{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.picture_part
+{
+  flex: 0 0 55%;
+}
+@media screen and (max-width: 768px) 
+{
+ .picture_part
+  {
+    flex: 0 0 100%;
+  }
+
+}
+
+.text_part
+{
+  flex: 0 0 38%;
+}
+@media screen and (max-width: 768px) 
+{
+ .text_part
+  {
+    flex: 0 0 100%;
+  }
+
+}
+
+.block_pic
+{
+  height: auto;
+  width: 100%;
+}
+
+
+#portrait_block .section_header
+{
+  color: white;
+}
+
+.flex_three_column  
+{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about_column
+{
+  flex-direction: column;
+  margin-bottom: 2rem;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 32%;
+
+}
+@media screen and (max-width: 768px) 
+{
+ .about_column
+  {
+    flex: 0 0 100%;
+  }
+
+}
+
+.about_column img
+{
+  width: 90%;
+  height: auto;
+  align-self: center;
+  max-height: 250px;
+
+}
+@media screen and (max-width: 768px) 
+{
+ .about_column img
+  {
+    max-height: 600px;
+    width: 100%;
+  }
+
+}
+
+.about_column .section_text
+{
+  margin-top: 1.5rem;
+  width: 95%;
+  align-self: center;
+}
+
+.recruit_about
+{
+  font-size: 130%;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+    
+.recruit_about img
+{
+  width: 90%;
+  height: auto;
+  margin: 2rem 0rem;
+  align-self: center;
+}
+
+.recruit_about .donate_btn
+{
+  align-self: center;
+}
+
+/*----------------- CONTENTS RACE RESULTS PAGE --------*/
+
+.results_block
+{
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.season_part
+{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0px 1px 4px 0px;
+}
+
+
+.season_pic
+{
+  width: 100%;
+  height: auto;
+}
+
+.season_pic img
+{
+  height: 100%;
+  width: 100%;
+  max-width: 1042px;/*IE why*/
+
+}
+
+.results_part
+{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  background-color: #fafafa;
+  max-width: 1042px;/*IE why*/
+
+}
+
+.race_card
+{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 1em 0em;
+  align-items: center;
+}
+
+.race_name
+{
+  font-size: 110%;
+  margin: 0.8em 0em;
+}
+@media screen and (max-width: 768px) 
+{
+ .race_name
+  {
+    margin: 0rem 0rem;
+  }
+
+}
+.info_row
+{
+  font-size: 80%;
+}
+
+.results_table
+{
+  border-collapse: collapse;
+  width: 20em;
+}
+
+.results_table, .results_table td
+{
+
+  border: 0.06rem solid #D8DCE6;/*dark blue*/;
+  color:#1e4394;/*dark blue*/
+}
+
+.results_table, .results_table th, .results_table td
+{
+  padding: 0.5rem;
+  background-color: #fff;
+
+}
+
+
+/* =============================================================================
+  Recruitment Page
+============================================================================= */
+.recruit_table
+{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.recruit_table, .recruit_table td
+{
+  border: 0.06rem solid #fff;/*black*/;
+  text-align: left;
+  color:#1a397f;/*dark blue*/
+  background-color: #f7e285;/*light yellow color*/
+}
+.recruit_table th
+{
+  background-color:#1a397f;/*dark blue*/
+  color: #ECF0F1;/*fuzzy white*/
+}
+
+.recruit_table, .recruit_table th, .recruit_table td
+{
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) 
+{
+  .recruit_table, .recruit_table th, .recruit_table td
+  {
+    padding: 0.5rem;
+  }
+
+}
+
+.recruitment_video
+{
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.recruitment_info
+{
+  text-align: center;
+}
+
+#map
+{
+  height: 650px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) 
+{
+ #map
+  {
+    height: 500px;
+  }
+
+}
+
+.recruitment_locations
+{
+  flex-direction: row;  
+}
+
+.location_pic
+{
+  flex: 0 0 48%;
+  margin: 1%;
+  font-size: 65%;
+}
+@media screen and (max-width: 768px) 
+{
+ .location_pic
+  {
+    flex: 0 0 100%;
+  }
+
+}
+
+
+.location_pic img
+{
+  width: 100%;
+  height: 100%;
+}
+/* =============================================================================
+  sponsors Page
+============================================================================= */
+.sponsor_block
+{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sponsor_textHalf
+{
+  flex: 0 0 50%;
+}
+@media screen and (max-width: 768px) 
+{
+ .sponsor_textHalf
+  {
+    flex: 0 0 100%;
+  }
+}
+
+.sponsor_picHalf
+{
+  flex: 0 0 40%;
+}
+@media screen and (max-width: 768px) 
+{
+ .sponsor_picHalf
+  {
+    flex: 0 0 100%;
+
+  }
+}
+/* =============================================================================
+  alumni Page
+============================================================================= */
+.description_text
+{
+  margin-bottom: 3rem;
+  font-size: 125%;
+  text-align: center;
+}
+
+.alumni_list
+{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.alumni_list .section_text
+{
+  flex: 0 0 16%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) 
+{
+ .alumni_list .section_text
+  {
+    font-size: 90%;
+  }
+
+}
+
+/* =============================================================================
+  donation Page
+============================================================================= */
+.donate_thanks
+{
+  margin: 0rem 2rem;
+}
+
+.donate_link
+{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.donate_description
+{
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+.donate_btn
+{
+  border-radius: 0.05rem;
+  background-color: #1e4394;
+  box-shadow: 0px 1px 4px 0px;
+  color: #f4d755; /*gold color*/
+  text-align: center;
+  font-size: 120%;
+  padding: 1rem 0rem;
+  width: 14rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.donate_btn a
+{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #f4d755;
+  text-decoration: none;
+}
+
+.donate_btn a:after 
+{
+  content: '›';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.5rem;/*distance the arrow is traveling*/
+  transition: 0.5s;
+}
+
+.donate_btn:hover a 
+{
+  padding-right: 1.5rem;/*distance text moves*/
+}
+
+.donate_btn:hover a:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+
+
