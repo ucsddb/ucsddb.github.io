@@ -16,6 +16,8 @@ function openNav()
 function closeNav() 
 {
     document.getElementById("sideNavId").style.width = "0";
+    document.getElementById("btnSideToggle").innerHTML = "☰";
+    console.log("log " + document.getElementById("btnSideToggle").text);
 }
 
 $(document).ready(function()
@@ -26,9 +28,10 @@ $(document).ready(function()
 	    {
 		    var clickedClass = $(event.target).attr('class');
 	    	console.log(clickedClass.toString());
-	       if (!clickedClass.includes('sideDetect')) {
-	       		document.getElementById("sideNavId").style.width = "0";
-	        }
+	       if (!clickedClass.includes('sideDetect')) 
+	       {
+	       		closeNav();
+	       }
 	    } 
 	});
 

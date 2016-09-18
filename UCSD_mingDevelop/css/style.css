@@ -137,9 +137,9 @@ body
   right: 0;
   font-size: 200%;
   cursor: pointer;
-  color: #ffffff;/*white*/
+  color: #ffffff!important;/*white*/
   opacity: 1.0;
-  text-shadow: #555 0.03rem  0.03rem  0.03rem;
+  text-shadow: #555 0.03rem  0.05rem  0.03rem;
   z-index: 5;
 }
 
@@ -452,6 +452,10 @@ body
     font-size: 400%;
   }
 
+  #recruitment_about_header
+  {
+    font-size: 300%;
+  }
 }
 
 #block_about1
@@ -693,7 +697,7 @@ body
 
 .recruit_table, .recruit_table td
 {
-  border: 0.06rem solid #fff;/*black*/;
+  border: 0.06rem solid #fff;/*white border*/;
   text-align: left;
   color:#1a397f;/*dark blue*/
   background-color: #f7e285;/*light yellow color*/
@@ -712,7 +716,8 @@ body
 {
   .recruit_table, .recruit_table th, .recruit_table td
   {
-    padding: 0.5rem;
+    padding: 0.25rem;
+    font-size: 80%;
   }
 
 }
@@ -852,6 +857,11 @@ body
   justify-content: center;
 }
 
+.donateNow_text
+{
+  margin: 1rem;
+  text-align: center;
+}
 .donate_description
 {
   margin-top: 2rem;
