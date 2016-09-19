@@ -135,12 +135,12 @@ body
   margin-right: 1rem;
   margin-top: 1rem;
   right: 0;
-  font-size: 200%;
+  font-size: 5vh;
   cursor: pointer;
   color: #ffffff!important;/*white*/
   opacity: 1.0;
   text-shadow: #555 0.1rem  0.1rem  0.075rem; /*right, bottom, blur*/
-  z-index: 5;
+  z-index: 10;
 }
 
 .sideNav
@@ -151,9 +151,10 @@ body
   width: 0;
   top: 0;
   right: 0;
+  font-size: 2vh;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.5s;
-  padding-top: 4rem;/*padding before first link*/
+  padding-top: 3.5rem;/*padding before first link*/
   overflow: hidden;
   white-space: nowrap;
   display: -webkit-flex;
@@ -167,7 +168,7 @@ body
   padding: 0.25rem 1rem 0.25rem 0.25rem;/*dimension of the sideNav*/
   text-align: right;
   text-decoration: none;
-  font-size: 170%;/*options for the sidebar*/
+  font-size: 4.5vh;/*options for the sidebar*/
   color: #cccccc;
   display: block;
   transition: 0.3s;
@@ -177,7 +178,7 @@ body
 {
  .sideLinks > a
   {
-    font-size: 150%;
+    font-size:3.5vh;
   }
 
 }
@@ -192,6 +193,7 @@ body
   white-space: nowrap;
   color:#ffffff;
   flex: 0 0 40%;
+  font-size:2.5vh;
 }
 
 .sideLinks

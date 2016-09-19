@@ -40,7 +40,7 @@ $(document).ready(function()
 			if(text === "☰")
 			{
 				openNav();
-				return text = "✖";
+				return text = "✕";
 			}else
 			{
 				closeNav();
