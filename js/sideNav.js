@@ -26,7 +26,6 @@ $(document).ready(function()
 	    if(parseInt(document.getElementById("sideNavId").style.width) > 0)
 	    {
 		    var clickedClass = $(event.target).attr('class');
-	    	console.log(clickedClass.toString());
 	       if (!clickedClass.includes('sideDetect')) 
 	       {
 	       		closeNav();
