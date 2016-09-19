@@ -17,7 +17,6 @@ function closeNav()
 {
     document.getElementById("sideNavId").style.width = "0";
     document.getElementById("btnSideToggle").innerHTML = "☰";
-    console.log("log " + document.getElementById("btnSideToggle").text);
 }
 
 $(document).ready(function()

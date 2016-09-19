@@ -164,7 +164,7 @@ body
 
 .sideLinks > a 
 {
-  padding: 0.3rem 1rem 0.3rem 0.3rem;/*dimension of the sideNav*/
+  padding: 0.25rem 1rem 0.25rem 0.25rem;/*dimension of the sideNav*/
   text-align: right;
   text-decoration: none;
   font-size: 170%;/*options for the sidebar*/
