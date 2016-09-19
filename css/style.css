@@ -154,7 +154,7 @@ body
   font-size: 2vh;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.5s;
-  padding-top: 3.5rem;/*padding before first link*/
+  padding-top: 4rem;/*padding before first link*/
   overflow: hidden;
   white-space: nowrap;
   display: -webkit-flex;
