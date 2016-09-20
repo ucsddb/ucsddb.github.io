@@ -75,6 +75,13 @@ body
   width: 100%;
   margin: 1rem 0rem;
 }
+@media screen and (max-width: 768px) 
+{
+  .section_header
+  {
+    font-size: 200%;
+  } 
+}
 
 .section_subHeader
 {
@@ -84,6 +91,13 @@ body
   text-align: center;
   width: 100%;
   margin: 0rem 0rem 1rem 0rem;
+}
+@media screen and (max-width: 768px) 
+{
+  .section_subHeader
+  {
+    font-size: 200%;
+  } 
 }
 
 .section_text
@@ -608,6 +622,8 @@ body
   -webkit-flex-direction: column;
   flex-direction: column;
   box-shadow: 0px 1px 4px 0px;
+  background-color: #fafafa;
+  width: 100%;
 }
 
 
@@ -632,9 +648,8 @@ body
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;  
-  background-color: #fafafa;
   max-width: 1042px;/*IE why*/
-
+  width: 100%;
 }
 
 .race_card
@@ -645,12 +660,28 @@ body
   flex-direction: column;
   margin: 1em 0em;
   align-items: center;
+  flex: 0 0 33%;
+}
+@media screen and (max-width: 768px) 
+{
+ .race_card
+  {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (max-width: 450px) 
+{
+ .race_card
+  {
+    flex: 0 0 100%;
+  }
 }
 
 .race_name
 {
   font-size: 110%;
   margin: 0.8em 0em;
+  text-align: center;
 }
 @media screen and (max-width: 768px) 
 {
@@ -658,8 +689,8 @@ body
   {
     margin: 0rem 0rem;
   }
-
 }
+
 .info_row
 {
   font-size: 80%;
@@ -668,8 +699,8 @@ body
 .results_table
 {
   border-collapse: collapse;
-  width: 20em;
 }
+
 
 .results_table, .results_table td
 {
@@ -824,10 +855,17 @@ body
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   justify-content: center;
 }
-
+@media screen and (max-width: 768px) 
+{
+ .alumni_list
+  {
+    width: 100%;
+    font-size: 75%;
+  }
+}
 .alumni_list .section_text
 {
   flex: 0 0 16%;
