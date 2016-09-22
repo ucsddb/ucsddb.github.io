@@ -197,9 +197,14 @@ body
 
 }
 
-.sideNav a:hover, .offcanvas a:focus
+.sideNav:hover a
 {
-  color: #ffffff;
+  color: #ccc!important;/*weak white*/
+}
+
+.sideNav a:hover
+{
+  color: #ffffff!important;/*strong white*/
 }
 
 .sideNavContact{
