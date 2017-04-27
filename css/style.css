@@ -316,6 +316,17 @@ body
   width: 40%;
 }
 
+#HubertsLemon img
+{
+  margin-top: 5%;
+  height: 90%;
+}
+
+#merlingear img
+{
+  width: 125%;
+}
+
 .donatelink
 {
   color:#f7e285;
@@ -644,6 +655,7 @@ body
 {
   height: 100%;
   width: 100%;
+  max-width: 1060px;/*IE why*/
 
 }
 
@@ -654,7 +666,7 @@ body
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;  
-  max-width: 1042px;/*IE why*/
+  max-width: 1060px;/*IE why*/
   width: 100%;
 }
 
@@ -695,6 +707,12 @@ body
   {
     margin: 0rem 0rem;
   }
+}
+
+.race_name a
+{
+  text-decoration: none;
+  color:inherit;
 }
 
 .info_row
