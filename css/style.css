@@ -778,6 +778,10 @@ body
 
 }
 
+.recruitment_video_header{
+  margin-top: 2rem;
+}
+
 .recruitment_video
 {
   width: 100%;
@@ -786,7 +790,8 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 0rem 2rem 2rem 2rem;
+
 }
 .recruitment_info
 {
