@@ -647,6 +647,15 @@ body
   margin-right: 5%;
 }
 
+@media screen and (min-width: 1050px)
+{
+  .season_part
+  {
+    max-width: 1050px;
+    margin: auto;
+  }
+}
+
 
 .season_pic
 {
@@ -762,6 +771,11 @@ body
   color:#1a397f;/*dark blue*/
   background-color: #f7e285;/*light yellow color*/
 }
+
+.recruit_table_cell_alt td{
+  background-color: #f7e79f;/*light yellow color*/
+}
+
 .recruit_table th
 {
   background-color:#1a397f;/*dark blue*/
@@ -782,8 +796,15 @@ body
 
 }
 
+.recruitment_header{
+  background-color: #333333;
+  margin: 0;
+  width: 100%;
+}
+
 .recruitment_video_header{
   margin-top: 2rem;
+  text-align: center;
 }
 
 .recruitment_video
@@ -836,7 +857,6 @@ body
 
 }
 
-
 .location_pic img
 {
   width: 100%;
@@ -883,26 +903,16 @@ body
   -webkit-transform: rotate(-135deg) translateX(12px) translateY(-12px);
 }
 
-/* MODAL BOX */
-
 .message_recruitment_over_cover{
-  display: block;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  width: 100%;
+  background-color: rgb(250, 100, 0);
+  display: none;
 }
 
 .message_recruitment_over_content{
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
+  padding: 10px;
+  margin: 2% 5% 2% 5%;
 }
 
 .close {
@@ -951,6 +961,7 @@ body
  .sponsor_picHalf
   {
     flex: 0 0 100%;
+    margin-top: 2rem;
 
   }
 }
@@ -1079,4 +1090,230 @@ body
 }
 
 
+/*test nagivation bar*/
+.navigation_bar{
+  width: 100%;
+  /*max-width: 1258px;*/
+  max-height: 56px;
+  margin: 0 auto;
+  background-color: #0c2f80;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 
+@media screen and (max-width: 960px) 
+{
+  .navigation_bar{
+    flex-direction: column;
+    max-height: 120px;
+  }
+}
+
+.nav_logo{
+  margin: 0.5em;
+  float: left;
+  flex: 0 0 25%;
+  width: 250px;
+}
+
+@media screen and (max-width: 960px) 
+{
+  .nav_logo{
+    margin: 2rem 5%;
+    flex: 0 0 0%;
+  }
+}
+
+.nav_logo img{
+  padding-top: 0.5em;
+  width: 40%;
+  max-height: 56px;
+}
+/* 768 */
+@media screen and (max-width: 960px) 
+{
+  .nav_logo img{
+    width: 90%;
+  }
+}
+
+.navigation_links{
+  width: 100%;
+  float: right;
+}
+
+@media screen and (max-width: 960px) 
+{
+  .navigation_links{
+    display: none;
+  }
+}
+
+.navigation_links ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation_links li{
+  float: right;
+}
+
+.navigation_links a{
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+}
+
+.navigation_links li:hover{
+  background-color: #071a47;
+}
+
+/* 
+  FOOTER / PAGE BOTTOM
+*/
+.page_bottom{
+  width: 100%;
+  background-color: #555555;
+  color: #FFFFFF;
+  padding: 1rem 0;
+}
+
+.bottom_header{
+  width: 100%;
+  font-size: 125%;
+  text-align: center;
+}
+
+.bottom_header a{
+  text-decoration: none;
+  color: white;
+}
+
+.bottom_header a:hover{
+  font-size: 130%;
+}
+
+.bottom_sponsor_links{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+
+  .bottom_sponsor_links{
+    display: none;
+  }
+}
+
+.bottom_sponsor_split{
+  flex: 0 0 25%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bottom_sponsor_split:hover{
+  font-size: 175%;
+  text-shadow: 2px 2px black;
+  user-select: none;
+}
+
+
+.bottom_sponsor_margin{
+  margin: 1rem auto;
+}
+
+.bottom_socialMedia_margin{
+  margin-top: 1rem;
+}
+
+#bottom_socialMedia_email{
+  margin: auto 2rem auto auto;
+}
+
+#bottom_socialMedia_facebook{
+  margin: auto 2rem;
+}
+
+#bottom_socialMedia_instagram{
+  margin: auto auto auto 2rem;
+}
+
+.bottom_SponsorContainer{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+
+  .bottom_SponsorContainer
+  {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #555555;
+  }
+}
+
+.bottom_sponsorIcon
+{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+  height: 150px;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 768px){
+
+  .bottom_sponsorIcon
+  {
+    flex: 0 0 100%;
+    height: 100px;
+  }
+}
+
+.bottom_Eidolon{
+  background-image: url("../img/EidolonHydros.png");
+  background-repeat: no-repeat;
+  background-size: 25% 100%;
+  background-position: center;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+
+  .bottom_Eidolon
+  {
+    background-size: 35% 90%;
+  }
+}
+
+.bottom_Merlin{
+  background-image: url("../img/16_17Season/merlingear.jpg");
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-position: center;
+  background-color: #FFFFFF;
+  border-left-color: #555555;
+  border-left-style: solid;
+  border-left-width: 0.25rem;
+}
+@media screen and (max-width: 768px){
+
+  .bottom_Merlin
+  {
+    border-left-width: 0;
+    margin-top: -1rem;
+    background-size: 60% 90%;
+  }
+}

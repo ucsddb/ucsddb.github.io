@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSD Dragon Boat</title>
+    <meta name="description" content="UCSD DB Recruiment Info 2019">
+    <meta name="author" description="UCSD Dragon Boat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700|Cabin">
+    <link rel="icon" type="image/png" href="img/dbFavicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!-- Get Icons-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--jquery-->
+	<script type="text/javascript"  src="js/sideNav.js"> </script> <!-- our own js file-->
+	<script type="text/javascript" src="js/recruitment2019.js"></script>
+</head>
+
+
+<body style="max-height: 1300px;">
+	<!--<div id="message_recruitment_over" class="message_recruitment_over_cover">
+		<div class="message_recruitment_over_content">
+			<span class="close">&times;</span>
+			<div class="horz_block flex_center" style="margin-top: 1em;">
+				<h1>IMPORTANT ANNOUNCEMENT</h1>
+				<p>We are sorry to announce that recruitment for the 2018-2019 season is over.
+					Please check back at the start of September 2019 for more information on recruitment
+					for the 2019-2020 season.</p>
+			</div>
+		</div>
+	</div> -->
+	
+    <div id="sideNavId" class="sideNav sideDetect">
+        <div class="sideLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="recruitment_2019.html" style="color:#fff">Recruitment</a>
+            <a href="results.html">Race Results</a>
+            <a href="alumni.html">Alumni</a>
+            <a href="sponsors.html">Sponsors</a>
+            <a href="donate.html"><div class="donatelink">Donate</div></a>
+        </div>
+        <div class="sideNavContact sideDetect">
+            <p class="emailContact sideDetect">ucsddragonboat@gmail.com</p>
+            <div class="socialMedia_container sideDetect">
+                <a href="https://www.facebook.com/ucsddragonboat/?fref=ts">
+                    <i class="fa fa-facebook-official fa-inverse" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/ucsddb/">
+                    <i class="fa fa-instagram fa-inverse" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <p class="sponsorContact">Big Thanks to Our Sponsors!</p>
+            <div class="sponsorContainer sideDetect">
+				<a class="sponsorIcon sideDetect" style="margin-top: 5%;">
+						<img src="img/EidolonHydros.png">
+				</a>
+                <a class="sponsorIcon sideDetect" id="merlingear" href="https://www.merlingear.com">
+                    <img src="img/16_17Season/merlingear.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+	<span class="sideNav_button sideDetect" id="btnSideToggle">&#9776</span>
+
+	<header>
+		<div class="content_wrap" style="width: 100%; background-color: #0c2f80;">
+			<div class="navigation_bar">
+				<div class="nav_logo">
+					<a href="index.html"><img src="img/logo.png"></a>
+				</div>
+				<div class="navigation_links">
+					<ul>
+						<li><a href="donate.html">Donate</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="alumni.html">Alumni</a></li>
+						<li><a href="results.html">Race Results</a></li>
+						<li><a href="recruitment_2019.html">Recruitment</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+    <div class="content_wrap" style="height: auto;">
+		<div class="flex_center recruitment_header">
+			<h1 class="about_header" id="recruitment_about_header" style="text-align: center">Recruitment 2019</h1>
+		</div>
+	
+	<!--
+	<div class="message_recruitment_over_cover">
+		<div class="message_recruitment_over_content">
+			<span class="close">&times;</span>
+			<div class="horz_block flex_center" style="margin-top: 1em;">
+				<h1>IMPORTANT ANNOUNCEMENT</h1>
+				<p>We are sorry to announce that recruitment for the 2018-2019 season is over.
+					Please check back at the start of September 2019 for more information on recruitment
+					for the 2019-2020 season.</p>
+			</div>
+		</div>
+	</div>
+	-->
+    
+    <div class="horz_block flex_center">
+    	<p class="section_subHeader">Join UC San Diego Dragon Boat!</p>
+		<div class="section_text recruitment_info">
+			<p>Recruitment for the UCSD Dragon Boat Team is held once a year in the Fall. All current UCSD students are invited to tryout, no experience necessary! <br>
+				Please attend our Recruitment Info Session (GBM) (Monday, 9/30 @8:00pm) for more information about the tryout process.</p>
+			<p><strong>Rides will be provided for ALL off campus recruitment events.</strong></p>
+			<p>We also provide FREE equipment for those without their own, including boats,
+				paddles, and personal floation devices (PFDs).<br>
+				Please email us at <a href="mailto:ucsddragonboat@gmail.com">ucsddragonboat@gmail.com</a> in advance for questions or concerns.</p>
+		</div>
+
+		<h3 class="recruitment_video_header">Check Out Our 2018 Recruitment Video!</h3>
+		<div class="recruitment_video">
+			<iframe id="recruitment_player" width="640" height="360" src="https://www.youtube.com/embed/tibtCOR_lX0?enablejsapi=1&origin=http://ucsddragonboat.org/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<!-- <iframe id="recruitment_player" width="640" height="360" src="https://www.youtube.com/embed/2S24-y0Ij3Y?enablejsapi=1&origin=http://ucsddragonboat.org/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		</div> 
+
+		<script type="text/javascript">
+			var tag = document.createElement('script');
+			tag.id = 'iframe-demo';
+			tag.src = 'https://www.youtube.com/iframe_api';
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			var player;
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('recruitment_player', {
+						events: {
+							'onReady': onPlayerReady,
+							'onStateChange': onPlayerStateChange
+						}
+				});
+			}
+			function onPlayerReady(event) {
+				document.getElementById('recruitment_player').style.borderColor = '#FF6D00';
+			}
+			function changeBorderColor(playerStatus) {
+				var color;
+				if (playerStatus == -1) {
+					color = "#37474F"; // unstarted = gray
+				} else if (playerStatus == 0) {
+					color = "#FFFF00"; // ended = yellow
+				} else if (playerStatus == 1) {
+					color = "#33691E"; // playing = green
+				} else if (playerStatus == 2) {
+					color = "#DD2C00"; // paused = red
+				} else if (playerStatus == 3) {
+					color = "#AA00FF"; // buffering = purple
+				} else if (playerStatus == 5) {
+					color = "#FF6DOO"; // video cued = orange
+				}
+				if (color) {
+					document.getElementById('recruitment_player').style.borderColor = color;
+				}
+			}
+			function onPlayerStateChange(event) {
+				changeBorderColor(event.data);
+			}
+		</script>
+    </div>
+
+	<div class="horz_block flex_center blue_block" style="margin-bottom: 0">
+		<a id="recruitment_dropdown" class="flex_center" style="width: 100%; color: white; text-decoration: none" href="#recruitment_dropdown">
+			<h3>
+				<span id="left_arrow" class="recruitment_arrow down_arrow_left"></span>
+				2019 Recruitment Information
+				<span id="right_arrow" class="recruitment_arrow down_arrow_right"></span>
+			</h3>
+		</a>
+		<div id="recruitment_dropdown_text" class="invisible">
+
+		<div class="white_block horz_block flex_center" style="width: 90%">
+		<div>
+			<div class="flex_center" style="margin: 0 0.5rem">
+				<h1 class="section_subHeader" style="margin-top: 1rem;">Schedule</h1>
+				<table class="recruit_table">
+					<tr>
+						<th>Date</th>
+						<th>Event</th>
+						<th>Time</th>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td><strong>Monday, 9/30</strong></td>
+						<td><strong>INFO SESSION #1</strong></td>
+						<td><strong>8:00pm-9:00pm</strong></td>
+						<td><strong>RIMAC Green Room (Triton Conference Room)</strong></td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Tuesday, 10/1</td>
+						<td>Poolside Technique Practice</td>
+						<td>1:00pm-4:00pm</td>
+						<td>Natatorium (Come if you can to work on paddling technique!)</td>
+					</tr>
+					<tr>
+						<td>Tuesday, 10/1</td>
+						<td>Land Practice Tryouts Day 1</td>
+						<td>8:00pm-9:00pm</td>
+						<td>Warren Mall (Come to <strong>at least</strong> 1 of 3)</td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Wednesday, 10/2</td>
+						<td>Water Practice #1</td>
+						<td>6:00am-8:00am</td>
+						<td>Mission Bay (meet at Town Square @5:30am for provided rides)</td>
+					</tr>
+					<tr>
+						<td>Wednesday, 10/2</td>
+						<td>Land Practice Tryouts Day 2</td>
+						<td>8:00pm-9:00pm</td>
+						<td>Warren Field (Come to <strong>at least</strong> 1 of 3)</td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Thursday, 10/3</td>
+						<td>Water Practice #2</td>
+						<td>6:00am-8:00am</td>
+						<td>Mission Bay (meet at Town Square @5:30am for provided rides)</td>
+					</tr>
+					<tr>
+						<td>Thursday, 10/3</td>
+						<td>Land Practice Tryouts Day 3</td>
+						<td>8:00pm-9:00pm</td>
+						<td>Warren Field (Come to <strong>at least</strong> 1 of 3)</td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Friday, 10/4</td>
+						<td>Bonfire Social</td>
+						<td>6:00pm-9:00pm</td>
+						<td>La Jolla Shores (meet at Peterson Loop <strong>@5:00pm</strong> for provided rides)</td>
+					</tr>
+					<tr>
+						<td><strong>Saturday, 10/5</strong></td>
+						<td><strong>INFO SESSION #2 (MAKEUP ONLY)</strong></td>
+						<td><strong>8:00am-8:30am</strong></td>
+						<td><strong>Town Square</strong></td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Saturday, 10/5</td>
+						<td>Water Practice Tryouts Day 1</td>
+						<td>9:00am-12:00pm</td>
+						<td>Mission Bay (meet at Town Square <strong>@8:30am</strong> for provided rides)</td>
+					</tr>
+					<tr>
+						<td>Sunday, 10/6</td>
+						<td>Water Practice Tryouts</td>
+						<td>9:00am-12:00pm</td>
+						<td>Mission Bay (meet at Town Square <strong>@8:30am</strong> for provided rides)</td>
+					</tr>
+					<tr class="recruit_table_cell_alt">
+						<td>Monday, 10/7 - Wednesday 10/9</td>
+						<td>Interviews</td>
+						<td><strong>Invitation Only</strong></td>
+						<td>TBD</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="horz_block flex_center recruitment_locations">
+				<p class="section_subHeader">
+						Locations
+				</p>
+				<div class="location_pic">
+						<p class="section_subHeader">RIMAC Gymnasium</p>
+						<img src="img/RIMAC.jpg">
+				</div>
+				<div class="location_pic">
+						<p class="section_subHeader">Town Square</p>
+						<img src="img/TownSquare.jpg">
+				</div>
+				<div class="location_pic">
+						<p class="section_subHeader">Warren Field</p>
+						<img src="img/WarrenField.jpg">
+				</div>
+				<div class="location_pic">
+						<p class="section_subHeader">Peterson Loop</p>
+						<img src="img/PetersonLoop.jpg">
+				</div>
+				<div class="location_pic">
+						<p class="section_subHeader">Natatorium</p>
+						<img src="img/Natatorium.jpg">
+				</div>
+		</div>
+
+		<div class="horz_block flex_center recruitment2">
+			<p class="section_subHeader">Map</p>
+			<div id="map"></div>
+			<script>
+				var map;
+				var labelMarker = 0; 
+				function initialize() {
+					var bounds = new google.maps.LatLngBounds();
+					map = new google.maps.Map(document.getElementById('map'), {
+						center: new google.maps.LatLng(2.8794408,-117.2369353),
+						zoom: 15
+					});
+					function addMarker(feature, index) 
+					{
+						var marker = new google.maps.Marker({
+							position: feature.position,
+							map: map
+						});
+						switch(index)
+						{
+							case 0:
+								var infowindow = new google.maps.InfoWindow({content: "Town Square"});
+								infowindow.open(map,marker);
+								bounds.extend(feature.position);
+								break;
+							case 1:
+								var infowindow = new google.maps.InfoWindow({content: "Warren Field"});
+								infowindow.open(map,marker);
+								bounds.extend(feature.position);
+								break;
+							case 2:
+								var infowindow = new google.maps.InfoWindow({content: "RIMAC Gymnasium"});
+								infowindow.open(map,marker);
+								bounds.extend(feature.position);
+								break;  
+							case 3:
+								var infowindow = new google.maps.InfoWindow({content: "Natatorium"});
+								infowindow.open(map,marker);
+								bounds.extend(feature.position);
+								break;
+							case 4:
+								var infowindow = new google.maps.InfoWindow({content: "Peterson Loop"});
+								infowindow.open(map,marker);
+								bounds.extend(feature.position);
+								break;
+							case 5:
+								var infowindow = new google.maps.InfoWindow({content: "Warren Mall"});
+								infowindow.open(map,marker);
+								break;
+							case 6:
+								var infowindow = new google.maps.InfoWindow({content: "La Jolla Shores"});
+								infowindow.open(map,marker);
+								break;
+							case 7:
+								var infowindow = new google.maps.InfoWindow({content: "Fiesta Island"});
+								infowindow.open(map,marker);
+								break;
+						}
+					}/*end of add marker function*/
+					var features = 
+					[
+						{
+							position: new google.maps.LatLng(32.878686, -117.236255)//town square
+						}, {
+							position: new google.maps.LatLng(32.879511, -117.231568),//Warren Field
+						}, {
+							position: new google.maps.LatLng(32.885531, -117.240635),//Rimac Annex
+						}, {
+							position: new google.maps.LatLng(32.877204, -117.241835),//Natatorium
+						}, {
+							position: new google.maps.LatLng(32.879747, -117.239736),//Peterson Loop
+						}, {
+							position: new google.maps.LatLng(32.8811438,-117.2349294), // Warren Mall
+						}/*, {
+							position: new google.maps.LatLng(32.858705, -117.255538),//la Jolla Shores
+						}, {
+							position: new google.maps.LatLng(32.777212, -117.215159)//missionbay
+						}*/
+					];
+					for (var i = 0, feature; feature = features[i]; i++) 
+					{
+						addMarker(feature, i);
+					}
+					map.fitBounds(bounds);
+					/*center map to the middle of the map*/
+				}
+
+			</script>
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv4ESsqwXPP-JEsFnKnXqpxNTgQyGx0C0&callback=initialize">
+			</script>
+		</div>
+		</div>
+		<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+										(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-67830507-1', 'auto');
+				ga('send', 'pageview');
+		</script>
+
+		</div>
+	</div>
+	</div>
+
+	<footer>
+		<div class="page_bottom">
+				<div class="flex_center bottom_header">
+					<a href="sponsors.html"><p style="text-align: center;">Sponsors</p></a>
+				</div>
+				<div class="sponsorContainer bottom_SponsorContainer">
+					<a class="bottom_sponsorIcon bottom_Eidolon">
+					</a>
+					<a class="bottom_sponsorIcon bottom_Merlin" href="https://www.merlingear.com">
+					</a>
+				</div>
+				<div class="flex_center bottom_sponsor_margin bottom_sponsor_links">
+					<a class="bottom_sponsor_split">Eidolon Hydros</a>
+					<a class="bottom_sponsor_split" href="https://www.merlingear.com">
+						Merlin
+					</a>
+				</div>
+				<div class="socialMedia_container bottom_socialMedia_margin">
+					<a id="bottom_socialMedia_email" href="mailto:ucsddragonboat@gmail.com">
+						<i class="fa fa-envelope fa-inverse" aria-hidden="true"></i>
+					</a>
+					<a id="bottom_socialMedia_facebook" href="https://www.facebook.com/ucsddragonboat/?fref=ts">
+						<i class="fa fa-facebook-official fa-inverse" aria-hidden="true"></i>
+					</a>
+					<a id="bottom_socialMedia_instagram" href="https://www.instagram.com/ucsddb/">
+						<i class="fa fa-instagram fa-inverse" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+	</footer>
+</body>
+</html
