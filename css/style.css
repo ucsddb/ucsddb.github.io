@@ -930,6 +930,12 @@ body
   cursor: pointer;
 }
 
+.recruitment-info-mobile{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 95%;
+}
+
 
 
 /* =============================================================================

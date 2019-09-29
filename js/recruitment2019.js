@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$("#recruitment_dropdown").click(function()
+	$("#recruitment_dropdown").on("click", function()
 	{
 		$("#recruitment_dropdown_text").toggleClass("invisible");
 		$("#right_arrow").toggleClass("down_arrow_right");
@@ -55,6 +55,16 @@ $(document).ready(function()
 			center();
 		}
 	});
+
+	// no clicking on mobile device
+	if (window.matchMedia('(max-device-width: 768px)').matches){
+		$("#recruitment_dropdown").parent().toggleClass("horz_block flex_center");
+		$("#recruitment_dropdown").html("<h3>2019 Recruitment Information</h3>");
+		$("#recruitment_dropdown").css("pointer-events", "none");
+		$("#recruitment_dropdown").off();
+		$("#recruitment_dropdown_text").toggleClass("invisible");
+		$("#recruitment_dropdown_text").children().first().toggleClass("recruitment-info-mobile");
+	}
 
 	/*
 		when page loads, must close message by clicking x.
